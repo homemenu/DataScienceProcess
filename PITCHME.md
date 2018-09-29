@@ -88,7 +88,7 @@ At each step of the way, we will walk through implementation details and achieve
 ![Microsoft Team Data Science Process](presentation/assets/image/tdsp-lifecycle2_businessunderstanding.png)
 @divend
 
----
+---?image=presentation/assets/background/business_understanding.jpg&size=cover&opacity=15
 
 ### Business Understanding
 
@@ -96,7 +96,7 @@ Somebody higher up (typically on the business side of the house) wants a data sc
 
 Your domain knowledge will be critical to success, but you should still find the champion(s) of your project and understand best their vision of success.
 
----
+---?image=presentation/assets/background/questions.jpg&size=cover&opacity=15
 
 ### Ask Questions
 
@@ -110,7 +110,7 @@ When interviewing your project champion or people on the business side, listen f
 
 These questions help you determine which algorithms to use.
 
----
+---?image=presentation/assets/background/problem.jpg&size=cover&opacity=15
 
 ### Get A Specific Problem
 
@@ -120,7 +120,7 @@ Your goal is to nail down a **specific** problem, narrowing the scope to somethi
 * Given a title and description for a product, tell me with at least 90% probability a listing category that Amazon will consider valid for this product.
 * Determine which factors most affect the number of years the first owner holds onto our mid-range sedan.
 
----
+---?image=presentation/assets/background/looking_for_data.jpg&size=cover&opacity=15
 
 ### Looking For Data
 
@@ -128,7 +128,7 @@ Once you have an interesting question, start looking for data. Some of this data
 
 Your champion will hopefully be able to point you in the right direction, but this part of the process requires legwork.
 
----
+---?image=presentation/assets/background/dictionary.jpg&size=cover&opacity=15
 
 ### Data Dictionary
 
@@ -140,7 +140,7 @@ Once you have a compendium of data sources, you will want to build a <strong>dat
 * Enumeration of valid values (if categorical)
 * Other domain rules (if known)
 
----
+---?image=presentation/assets/background/warehouse.jpg&size=cover&opacity=15
 
 ### End Result
 
@@ -160,7 +160,7 @@ We work for Data Platform Specialists, a company dedicated to providing DBAs and
 
 ![Sample survey data](presentation/assets/image/Survey.png)
 
----
+---?image=presentation/assets/background/example_questions.jpg&size=cover&opacity=15
 
 ### Example
 
@@ -180,7 +180,7 @@ Narrowing this down with our champion and other stakeholders, we can get to the 
 
 **How much money should we expect a data professional will make?**
 
----
+---?image=presentation/assets/background/documents.jpg&size=cover&opacity=15
 
 ### Example
 
@@ -190,7 +190,7 @@ For example, TelecommuteDaysPerWeek has six options:  less than 1, 1, 2, 3, 4, 5
 
 By contrast, number of hours worked per week is an integer ranging from 5 to 200 (?!).
 
----
+---?image=presentation/assets/background/3_1_connection.jpg&size=cover&opacity=15
 
 ### Example
 
@@ -203,15 +203,15 @@ Our company wants to build a small website and allow people who have built profi
 ## Agenda
 
 @div[left-50]
-![Microsoft Team Data Science Process](presentation/assets/image/tdsp-lifecycle2_data.png)
-@divend
-
-@div[right-50]
 1. Business Understanding<br />
 2. **Data Processing**<br />
 3. Modeling<br />
 4. Deployment<br />
 5. What's Next?
+@divend
+
+@div[right-50]
+![Microsoft Team Data Science Process](presentation/assets/image/tdsp-lifecycle2_data.png)
 @divend
 
 ---
@@ -433,15 +433,15 @@ Here we have two comparisons, depth vs table and x vs y. Depth and table are mil
 ## Agenda
 
 @div[left-50]
-![Microsoft Team Data Science Process](presentation/assets/image/tdsp-lifecycle2_modeling.png)
+1. Business Understanding<br />
+2. Data Processing<br />
+3. **Modeling**<br />
+4. Deployment<br />
+5. What's Next?
 @divend
 
 @div[right-50]
-1. Business Understanding
-2. Data Processing
-3. **Modeling**
-4. Deployment
-5. What's Next?
+![Microsoft Team Data Science Process](presentation/assets/image/tdsp-lifecycle2_modeling.png)
 @divend
 
 ---
@@ -618,15 +618,15 @@ You can also build a fitness function to evaluate certain types. Genetic algorit
 ## Agenda
 
 @div[left-50]
-![Microsoft Team Data Science Process](presentation/assets/image/tdsp-lifecycle2_deployment.png)
+1. Business Understanding<br />
+2. Data Processing<br />
+3. Modeling<br />
+4. **Deployment**<br />
+5. What's Next?
 @divend
 
 @div[right-50]
-1. Business Understanding
-2. Data Processing
-3. Modeling
-4. **Deployment**
-5. What's Next?
+![Microsoft Team Data Science Process](presentation/assets/image/tdsp-lifecycle2_deployment.png)
 @divend
 
 ---
