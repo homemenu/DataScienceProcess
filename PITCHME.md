@@ -322,17 +322,15 @@ If your data source does not have duplicate protection in place, you might end u
 
 ---
 
-### Data Cleansing - Inconsistencies
+### Data Inconsistencies
 
-Independent systems may end up with inconsistent data due to various reasons like typos, transcription errors, etc. Sometimes there are subtle differences in data sets which lead to differing results.
-
-Solutions:
+Independent systems may end up with inconsistent data due to reasons like typos, transcription errors, etc. Sometimes subtle differences in data sets can lead to differing results. Potential solutions include:
 * Make one data set canonical
 * Institute rules (pick the lower number, pick the later date, etc.)
 
 ---
 
-### Data Cleansing - Misshapenness
+### Misshapen Data
 
 Data stored in flat files or textual format can end up misshapen--some rows may not have enough delimiters (or maybe too many), there could be newlines in the middle of a record, or the file cuts off in the middle of a record.
 
@@ -380,7 +378,7 @@ The cardinality of a feature is the number of unique values.
 
 ### Data Analysis - 5-Number Summary
 
-The five-number summary of a feature tells us the minimum value, value at the 25% mark, value at the 50% mark, value at the 75% mark, and maximum value. The mean technically is not part of the five-number summary, but can be useful to know as well.
+The five-number summary of a feature tells us the minimum value, value at the 25% mark, value at the 50% mark, value at the 75% mark, and maximum value. The mean technically is not part of the five-number summary, but can be useful.
 
 ![Five-Number Summary](presentation/assets/image/FiveNumber.png)
 
@@ -399,13 +397,13 @@ Box plots show us the five-number summary by group.
 
 Histograms show us the spread of a single variable.
 
-![Box Plot](presentation/assets/image/Histogram.png)
+<img src="presentation/assets/image/Histogram.png" height="500" width="360" />
 
 ---
 
 ### Data Analysis - Correlation
 
-Here we have two comparisons, depth vs table and x vs y. Depth and table are mildly negatively correlated; this isn't a problem. The x and y variables, however, are very highly correlated. Some models, such as linear regression, may exhibit problems if you include both x and y in your analysis.
+Here we have two comparisons, depth vs table and x vs y. Depth and table are mildly negatively correlated; this isn't a problem. The x and y variables, however, are very highly correlated. Some algorithms may exhibit problems if you include both x and y in your analysis.
 
 ![Box Plot](presentation/assets/image/Correlation.png)
 
@@ -552,7 +550,7 @@ Once you have an algorithm, features, and labels (if supervised), you can train 
 
 Instead of using up all of our data for training, we typically want to perform some level of validation within our training data set to ensure that we are on the right track and are not overfitting.
 
-Overfitting happens when a model latches on to the particulars of a data set, leaving it unable to generalize to new data. The easy way to tell if you are overfitting is to test your model against unseen data, and if there is a big dropoff in model accuracy between training and testing data, you are likely overfitting.
+Overfitting happens when a model latches on to the particulars of a data set, leaving it unable to generalize to new data. To test for overfitting, test your model against unseen data. If there is a big dropoff in model accuracy between training and testing data, you are likely overfitting.
 
 ---
 
@@ -705,9 +703,9 @@ In a production scenario, you will start with a Minimum Viable Product (MVP) to 
 
 ---
 
-### What's Next?
+### Moral Of The Story
 
-In other words, a data plumber's work is never done.
+A data plumber's work is never done.
 
 ![A data plumber's work is never done](presentation/assets/image/MarioGames.jpg)
 
