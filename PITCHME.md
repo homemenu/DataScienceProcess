@@ -77,15 +77,15 @@ At each step of the way, we will walk through implementation details and achieve
 ## Agenda
 
 @div[left-50]
-![Microsoft Team Data Science Process](presentation/assets/image/tdsp-lifecycle2_businessunderstanding.png)
-@divend
-
-@div[right-50]
 1. **Business Understanding**<br />
 2. Data Processing<br />
 3. Modeling<br />
 4. Deployment<br />
 5. What's Next?
+@divend
+
+@div[right-50]
+![Microsoft Team Data Science Process](presentation/assets/image/tdsp-lifecycle2_businessunderstanding.png)
 @divend
 
 ---
