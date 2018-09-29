@@ -224,7 +224,7 @@ Data processing is made up of a few different activities:
 * Data Cleansing
 * Data Analysis
 
----
+---?image=presentation/assets/background/collection.jpg&size=cover&opacity=15
 
 ### Data Gathering
 
@@ -235,7 +235,7 @@ Data gathering will likely be an iterative process; as you flesh out your models
 * Paid APIs or data sources from third parties
 * Survey data
 
----
+---?image=presentation/assets/background/map.jpg&size=cover&opacity=15
 
 ### Data Gathering Example
 
@@ -275,7 +275,7 @@ Most of your time, you'll be a data plumber.
 
 ![Data Plumber](presentation/assets/image/SuperMario.jpg)
 
----
+---?image=presentation/assets/background/2_0_cleaning.jpg&size=cover&opacity=15
 
 ### Data Cleansing
 
@@ -283,7 +283,7 @@ General estimates that you will hear from data scientists is that they spend app
 
 Simply getting the data is a start, but there's a long journey ahead.
 
----
+---?image=presentation/assets/background/4_3_datatypes.jpg&size=cover&opacity=15
 
 ### Data Cleansing
 
@@ -293,7 +293,7 @@ After grabbing relevant-looking data sets, you will want to join them together t
 * Definining join criteria (because there is no obvious natural join key)
 * Reshaping data to fit join criteria
 
----
+---?image=presentation/assets/background/4_1_dataquality.jpg&size=cover&opacity=15
 
 ### Data Cleansing
 
@@ -305,7 +305,7 @@ You will quickly find problems with your data sets, including (but not limited t
 * Data inconsistencies:  records conflicting with other records
 * Misshapen flat files
 
----
+---?image=presentation/assets/background/mismatch.jpg&size=cover&opacity=15
 
 ### Data Cleansing - Mismatches
 
@@ -315,7 +315,7 @@ You will quickly find problems with your data sets, including (but not limited t
 							
 **Incorrect** data: when data other than the label is incorrect. Ex: a person works 200 hours per week?
 
----
+---?image=presentation/assets/background/hole.jpg&size=cover&opacity=15
 
 ### Data Cleansing - Missing Data
 
@@ -328,7 +328,7 @@ People don't always fill out the entirety of every form. When we're missing impo
 
 None of these options is perfect, but the last three can help salvage incomplete records.
 
----
+---?image=presentation/assets/background/duplicates.jpg&size=cover&opacity=15
 
 ### Data Cleansing - Duplicates
 
@@ -342,7 +342,7 @@ Independent systems may end up with inconsistent data due to reasons like typos,
 * Make one data set canonical
 * Institute rules (pick the lower number, pick the later date, etc.)
 
----
+---?image=presentation/assets/background/misshapen.jpg&size=cover&opacity=15
 
 ### Misshapen Data
 
@@ -350,7 +350,7 @@ Data stored in flat files or textual format can end up misshapen--some rows may 
 
 This is a problem with flat files and certain semi-structured data formats. It is not a problem with relational databases, where data shape is enforced.
 
----
+---?image=presentation/assets/background/shapes.jpg&size=cover&opacity=15
 
 ### Data Shaping
 
@@ -365,7 +365,7 @@ There are several techniques we can use to reshape data to make it easier to ana
 
 ### Demo Time
 
----
+---?image=presentation/assets/background/exploration.jpg&size=cover&opacity=15
 
 ### Data Analysis
 
@@ -444,7 +444,7 @@ Here we have two comparisons, depth vs table and x vs y. Depth and table are mil
 ![Microsoft Team Data Science Process](presentation/assets/image/tdsp-lifecycle2_modeling.png)
 @divend
 
----
+---?image=presentation/assets/background/model.jpg&size=cover&opacity=15
 
 ### Modeling
 
@@ -456,7 +456,7 @@ Modeling has five major steps:
 * Model Evaluation
 * Model Tuning
 
----
+---?image=presentation/assets/background/engineering.jpg&size=cover&opacity=15
 
 ### Feature Engineering
 
@@ -468,7 +468,7 @@ Feature engineering involves creating relevant features from raw data. Examples 
 * Aggregating data (by day, by hour, etc.)
 * Text processing -- turning words into arbitrary numbers for numeric analysis (TF-IDF, Word2Vec)
 
----
+---?image=presentation/assets/background/selection.jpg&size=cover&opacity=15
 
 ### Feature Selection
 
@@ -486,7 +486,7 @@ We use feature selection to winnow down the available set of features.  There ar
 ![My favorite example of spurious correlation](presentation/assets/image/SpuriousCorrelation.png)
 (<a href="http://www.tylervigen.com/spurious-correlations">Source</a>)
 
----
+---?image=presentation/assets/background/train.jpg&size=cover&opacity=15
 
 ### Model Training
 
@@ -498,7 +498,7 @@ There are four major branches of algorithms:
 * Self-supervised learning
 * Reinforcement learning
 
----
+---?image=presentation/assets/background/supervision.jpg&size=cover&opacity=15
 
 ### Supervised Learning
 
@@ -508,7 +508,7 @@ Supervised learning models require known answers (labels). We train a model to m
 * Classification -- Which?
 * Recommendation -- What next?
 
----
+---?image=presentation/assets/background/cluster.jpg&size=cover&opacity=15
 
 ### Unsupervised Learning
 
@@ -517,7 +517,7 @@ With unsupervised learning, we do not know the answers beforehand and try to der
 * Clustering -- How can we segment?
 * Dimensionality reduction -- What of this data is useful?
 
----
+---?image=presentation/assets/background/book.jpg&size=cover&opacity=15
 
 ### Self-Supervised Learning
 
@@ -537,7 +537,7 @@ Self-supervised learning typically happens with neural networks.
 Reinforcement learning is where we train an agent to observe its environment and use those environmental clues to make a decision.
 @divend
 
----
+---?image=presentation/assets/background/greenscreen.jpg&size=cover&opacity=15
 
 ### Choose An Algorithm
 
@@ -565,7 +565,7 @@ Once you understand the nature of the problem, you can choose among viable algor
 Once you have an algorithm, features, and labels (if supervised), you can train the algorithm. Training a model is solving a system of equations, minimizing a loss function.
 @divend
 
----
+---?image=presentation/assets/background/fitting.jpg&size=cover&opacity=15
 
 ### Validate The Model
 
@@ -573,13 +573,13 @@ Instead of using up all of our data for training, we typically want to perform s
 
 Overfitting happens when a model latches on to the particulars of a data set, leaving it unable to generalize to new data. To test for overfitting, test your model against unseen data. If there is a big dropoff in model accuracy between training and testing data, you are likely overfitting.
 
----
+---?image=presentation/assets/background/suitmeasure.jpg&size=cover&opacity=15
 
 ### Cross-Validation
 
 Cross-validation is a technique where we slice and dice the training data, training our model with different subsets of the total data. The purpose here is to find a model which is fairly robust to the particulars of a subset of training data, thereby reducing the risk of overfitting.
 
----
+---?image=presentation/assets/background/tuning.jpg&size=cover&opacity=15
 
 ### Tune The Model
 
@@ -587,7 +587,7 @@ Most models have **hyperparameters**. For neural networks, the number of trainin
 
 We tune hyperparameters using our validation data set.
 
----
+---?image=presentation/assets/background/evaluation.jpg&size=cover&opacity=15
 
 ### Evaluate The Model
 
@@ -635,7 +635,7 @@ You can also build a fitness function to evaluate certain types. Genetic algorit
 
 Back in the day, one team would build a solution in an analytics language (e.g., R) but you would not go to production with that. Instead, an implementation team would rewrite your model in C++ or some other fast language. Those days of research versus implementation teams using completely different languages are now (mostly) gone.
 
----
+---?image=presentation/assets/background/microscope.jpg&size=cover&opacity=15
 
 ### Deployment
 
@@ -649,7 +649,7 @@ Once you have a model ready to go, there are tools which make it relatively easy
 
 ![The DeployR process.](presentation/assets/image/deployrworkflow.png)
 
----
+---?image=presentation/assets/background/stack.jpg&size=cover&opacity=15
 
 ### Deployment
 
@@ -660,7 +660,7 @@ You can also build your own services.  Stacks that I've put into production incl
 
 With a microservices architecture, you're trying to plug in these new APIs while not forcing everybody else to change their skills.
 
----
+---?image=presentation/assets/background/time.jpg&size=cover&opacity=15
 
 ### Deployment
 
@@ -701,7 +701,7 @@ Shiny is an interactive visualization product combining JavaScript and R. This i
 4. Deployment
 5. **What's Next?**
 
----
+---?image=presentation/assets/background/sinkhole.jpg&size=cover&opacity=15
 
 ### What's Next?
 
@@ -711,7 +711,7 @@ It is important to keep checking the efficacy of models. Model shift happens, wh
 
 You may also find out that your training/testing data was not truly indicative of real-world data.
 
----
+---?image=presentation/assets/background/flow.jpg&size=cover&opacity=15
 
 ### What's Next?
 
@@ -721,7 +721,7 @@ Depending upon your choice of algorithm, you might be able to update the existin
 
 Some algorithms, however, require you to retrain from scratch.
 
----
+---?image=presentation/assets/background/repetition.jpg&size=cover&opacity=15
 
 ### What's Next?
 
