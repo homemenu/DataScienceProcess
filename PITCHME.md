@@ -43,8 +43,8 @@
 * "Clean" data is an aspiration, not a reality
 * If data is stored in two places, there will inevitably be disagreements
 * You will always have more questions than data
-* Decision-makers will not know their questions until you have enough information to give them; their questions almost invariably cannot be answered by your system
-* Data necessarily abstracts the particulars of time and place and therefore explains a fragment of the underlying reality
+* Decision-makers will not know their questions until you have enough information to give them
+* Data necessarily abstracts the particulars of time and place
 
 Nevertheless, our job is to figure something out.
 
@@ -52,13 +52,13 @@ Nevertheless, our job is to figure something out.
 
 ### Process
 
+To deal with these considerations, we build and implement processes.  These processes give us structure and help us navigate some of the difficulties in managing data.
+
 @div[left-50]
 ![Microsoft Team Data Science Process](presentation/assets/image/tdsp-lifecycle2.png)
 @divend
 
 @div[right-50]
-To deal with these considerations, we build and implement processes.  These processes give us structure and help us navigate some of the difficulties in managing data.
-
 In today's talk, we will look at one particular process:  the Microsoft Team Data Science Process.
 @divend
 
