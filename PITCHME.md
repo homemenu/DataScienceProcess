@@ -87,9 +87,7 @@ At each step of the way, we will walk through implementation details and achieve
 
 Somebody higher up (typically on the business side of the house) wants a data science project done.  Your mission is to figure out as much about that person's vision as possible.
 
-The first clue is in understanding the domain. What does the company do? Which industry are we in? What is the common parlance? Which technical terms do people use and what do they mean?
-
-Even if you have a deep knowledge of the domain, you should still find the champion(s) of your project and understand best their vision of success.
+Your domain knowledge will be critical to success, but you should still find the champion(s) of your project and understand best their vision of success.
 
 ---
 
@@ -103,19 +101,17 @@ When interviewing your project champion or people on the business side, listen f
 * Is this weird?
 * Which option should I choose?
 
-Each of these is a different type of problem with its own set of statistical techniques and rules. Figuring out which of these is on your champion's mind is critical to delivering the right product.
+These questions help you determine which algorithms to use.
 
 ---
 
 ### Get A Specific Problem
 
-Your goal is to nail down a **specific** problem with a <strong>specific</strong> answer, narrowing the scope to something achievable.
+Your goal is to nail down a **specific** problem, narrowing the scope to something achievable.
 
 * Find a model which predicts quarterly sales to within 5% no later than 30 days into that quarter.
 * Given a title and description for a product, tell me with at least 90% probability a listing category that Amazon will consider valid for this product.
 * Determine which factors most affect the number of years the first owner holds onto our mid-range sedan.
-
-With a specific problem to solve, you can start looking for relevant data. Note that you might need to modify the scope of this problem over time but this at least gives you a starting point for what success looks like.
 
 ---
 
@@ -152,6 +148,8 @@ This is generally a technical problem that an Engineering group will architect, 
 We work for Data Platform Specialists, a company dedicated to providing DBAs and other data platform professionals with valuable market knowledge. We have come into possession of a survey of data professionals and want to build insights that we can share with our client base.
 
 ---
+
+### Example
 
 ![Sample survey data](presentation/assets/image/Survey.png)
 
@@ -216,7 +214,7 @@ Data processing is made up of a few different activities:
 
 ### Data Gathering
 
-Data gathering will likely be an iterative process. At first, you won't know exactly what data you need. But as you flesh out your models and gain a better understanding of the problem, you will go back to the well several times and probably will end up getting data from other sources. These sources can include:
+Data gathering will likely be an iterative process; as you flesh out your models and gain a better understanding of the problem, you will likely search several times for data from sources like:
 
 * Internal proprietary data
 * Open data sources (often governmental or academic)
@@ -229,19 +227,23 @@ Data gathering will likely be an iterative process. At first, you won't know exa
 
 In this example, we will stick to just the data professional survey. But if you want to take this further, a few additional data sources could be:
 
-* PPP GDP per capita to normalize salaries across countries.
-* A geocoding data set to visualize results on a map.
-* Cost of living by ZIP code to normalize salaries within the US.
-* Census information to build out data by ZIP code.
+* PPP GDP per capita to normalize across countries.
+* A geocoding data set to visualize results.
+* Cost of living by ZIP code.
+* Census information by ZIP code.
 * Data from other surveys to add more to the sample.
 
 ---
 
 ### Data Cleansing
 
-Data cleansing is half the battle.  That's the title, after all!
-
+@div[left-50]
 ![Knowledge is half the battle.](presentation/assets/image/Knowing.jpg)
+@divend
+
+@div[right-50]
+Data cleansing is half the battle.  That's the title, after all!
+@divend
 
 ---
 
@@ -303,7 +305,7 @@ You will quickly find problems with your data sets, including (but not limited t
 
 ### Data Cleansing - Missing Data
 
-People don't always fill out the entirety of every form. Sometimes, they don't even give us important information. When we're missing data, we have a few options available to us:
+People don't always fill out the entirety of every form. When we're missing important data, we have a few options available to us:
 
 * Delete the row (okay with a small percent)
 * Substitute with a dummy value
@@ -314,21 +316,23 @@ None of these options is perfect, but the last three can help salvage incomplete
 
 ---
 
-### Data Cleansing - Duplicate Data
+### Data Cleansing - Duplicates
 
 If your data source does not have duplicate protection in place, you might end up with multiple entries representing the same thing. Sometimes it's easy to catch those:  you might be able to use a DISTINCT clause to remove duplicates. Other times, you will have to dig further.
 
 ---
 
-### Data Cleansing - Inconsistent Data
+### Data Cleansing - Inconsistencies
 
-Independent systems may end up with inconsistent data. Sometimes people forget to fill out both systems the same.  Sometimes there are typos in data. Sometimes there are subtle differences in data sets which lead to differing results.
+Independent systems may end up with inconsistent data due to various reasons like typos, transcription errors, etc. Sometimes there are subtle differences in data sets which lead to differing results.
 
-Regardless of the reason, we need to be able to handle those differences. One way to handle differences is to make one data set canonical and trust it over the other set. Another way to handle differences is to institute a rule--for example, maybe the lower number between data sources is more likely to be correct so you go with it.
+Solutions:
+* Make one data set canonical
+* Institute rules (pick the lower number, pick the later date, etc.)
 
 ---
 
-### Data Cleansing - Misshapen Data
+### Data Cleansing - Misshapenness
 
 Data stored in flat files or textual format can end up misshapen--some rows may not have enough delimiters (or maybe too many), there could be newlines in the middle of a record, or the file cuts off in the middle of a record.
 
@@ -353,7 +357,7 @@ There are several techniques we can use to reshape data to make it easier to ana
 
 ### Data Analysis
 
-The most common technique for data analysis at this point is Exploratory Data Analysis (EDA). The purpose of Exploratory Data Analysis is to summarize the data in a way that gives you a better understanding of the data. Examples of EDA techniques include:
+The most common technique for data analysis at this point is Exploratory Data Analysis (EDA). Examples of EDA techniques include:
 
 * Getting count and cardinality of features
 * Building out 5-number summaries
@@ -376,49 +380,35 @@ The cardinality of a feature is the number of unique values.
 
 ### Data Analysis - 5-Number Summary
 
-@div[left-50]
-![Five-Number Summary](presentation/assets/image/FiveNumber.png)
-@divend
-
-@div[right-50]
 The five-number summary of a feature tells us the minimum value, value at the 25% mark, value at the 50% mark, value at the 75% mark, and maximum value. The mean technically is not part of the five-number summary, but can be useful to know as well.
-@divend
+
+![Five-Number Summary](presentation/assets/image/FiveNumber.png)
 
 ---
 
 ### Data Analysis - Box Plot
 
-@div[left-50]
-![Box Plot](presentation/assets/image/BoxPlot.png)
-@divend
 
-@div[right-50]
 Box plots show us the five-number summary by group.
-@divend
+
+![Box Plot](presentation/assets/image/BoxPlot.png)
 
 ---
 
 ### Data Analysis - Histogram
 
-@div[left-50]
-![Box Plot](presentation/assets/image/Histogram.png)
-@divend
-
-@div[right-50]
 Histograms show us the spread of a single variable.
-@divend
+
+![Box Plot](presentation/assets/image/Histogram.png)
 
 ---
 
 ### Data Analysis - Correlation
 
-@div[left-50]
-![Box Plot](presentation/assets/image/Correlation.png)
-@divend
-
-@div[right-50]
 Here we have two comparisons, depth vs table and x vs y. Depth and table are mildly negatively correlated; this isn't a problem. The x and y variables, however, are very highly correlated. Some models, such as linear regression, may exhibit problems if you include both x and y in your analysis.
-@divend
+
+![Box Plot](presentation/assets/image/Correlation.png)
+
 
 ---?image=presentation/assets/background/4_5_demo.jpg&size=cover&opacity=15
 
@@ -451,21 +441,21 @@ Modeling has five major steps:
 
 ### Feature Engineering
 
-Feature engineering involves creating relevant features from raw data. These can include things like:
+Feature engineering involves creating relevant features from raw data. Examples include:
 
 * Indicator flags (Age >= 21, Income >= $100K)
 * Calculations (ClickThroughRate = Clicks / Impressions)
-* Geocoding latitude and longitude from a street address
-* Aggregating data (by day, by hour, by 36-hour period)
+* Geocoding latitude and longitude from an address
+* Aggregating data (by day, by hour, etc.)
 * Text processing -- turning words into arbitrary numbers for numeric analysis (TF-IDF, Word2Vec)
 
 ---
 
 ### Feature Selection
 
-We use feature selection to winnow down the available set of features, removing redundant, unnecessary, or highly correlated features.  There are several reasons to do this:
+We use feature selection to winnow down the available set of features.  There are several reasons to do this:
 
-* Collinearity -- one explanatory variable can predict another, which makes analysis less precise.
+* Collinearity -- one feature can predict another, making analysis less precise.
 * Make analysis easier for a human to understand by removing irrelevant or redundant features.
 * More efficient training with fewer variables.
 * Reduce the risk of an irrelevant or redundant feature causing spurious correlation.
@@ -475,7 +465,6 @@ We use feature selection to winnow down the available set of features, removing 
 ### Spurious Correlation
 
 ![My favorite example of spurious correlation](presentation/assets/image/SpuriousCorrelation.png)
-
 (<a href="http://www.tylervigen.com/spurious-correlations">Source</a>)
 
 ---
@@ -533,7 +522,7 @@ Reinforcement learning is where we train an agent to observe its environment and
 
 ### Choose An Algorithm
 
-Once you understand the nature of the problem, you can choose an algorithm.  There are often several potential algorithms which can solve the problem, so you will want to try different algorithms and compare. The major trade-offs between algorithms typically include:
+Once you understand the nature of the problem, you can choose among viable algorithms based on the following major trade-offs:
 
 * Accuracy
 * Training time
@@ -563,7 +552,7 @@ Once you have an algorithm, features, and labels (if supervised), you can train 
 
 Instead of using up all of our data for training, we typically want to perform some level of validation within our training data set to ensure that we are on the right track and are not overfitting.
 
-Overfitting happens when a model latches on to the particulars of a data set, leaving it at risk of not being able to generalize to new data. The easy way to tell if you are overfitting is to test your model against unseen data, and if there is a big dropoff in model accuracy between training and testing data, you are likely overfitting.
+Overfitting happens when a model latches on to the particulars of a data set, leaving it unable to generalize to new data. The easy way to tell if you are overfitting is to test your model against unseen data, and if there is a big dropoff in model accuracy between training and testing data, you are likely overfitting.
 
 ---
 
@@ -583,7 +572,7 @@ We tune hyperparameters using our validation data set.
 
 ### Evaluate The Model
 
-Model evaluation happens when we send new data to the model that it has never before seen. This is data that we did not use at all during the training and validation process. We have to be careful not to let any information leak into the training data, meaning that we should never feed aggregates of training + evaluation data to a model.
+Model evaluation happens when we send new data to the model that it has not seen during the training and validation process. We have to be careful not to let any information leak into the training data, meaning that we should never feed aggregates of training + evaluation data to a model.
 
 If we fail to safeguard this data, we can end up overfitting our model to the test data, leaving it less suited for the real-world data outside of our sample.
 
@@ -700,9 +689,9 @@ You may also find out that your training/testing data was not truly indicative o
 
 ### What's Next?
 
-Occasionally, you will take new production data and retrain the model.  This works best if you keep track of your model's predictions and actual outcomes so you can tell the actual efficacy of the model.
+Occasionally, you will want to take new production data and retrain the model, so keep track of your model's predictions and actual outcomes so you can determine the model's efficacy.
 
-Depending upon your choice of algorithm, you might be able to update the existing model with the latest information. If you create a process whereby the service you've created automatically feeds the data back to your model, you have true machine learning.
+Depending upon your choice of algorithm, you might be able to update the existing model with the latest information, feeding those efficacy results back into the model.
 
 Some algorithms, however, require you to retrain from scratch.
 
@@ -712,13 +701,13 @@ Some algorithms, however, require you to retrain from scratch.
 
 Regardless of model efficacy, you will want to confer with those stakeholders and ensure that your model fits their needs. Then, repeat the process.
 
-In a production scenario, you will start with a Minimum Viable Product (MVP) to gauge interest. If there is sufficient interest, you can add incremental improvements.  That could include expanding the base of predictions, making more accurate predictions, improving the speed of your service, or adding new functionality.
+In a production scenario, you will start with a Minimum Viable Product (MVP) to gauge interest.  From there, you can expand the base of predictions, increase accuracy, make the service faster, or add new functionality.
 
 ---
 
 ### What's Next?
 
-The moral of the story:  a data plumber's work is never done.
+In other words, a data plumber's work is never done.
 
 ![A data plumber's work is never done](presentation/assets/image/MarioGames.jpg)
 
