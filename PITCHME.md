@@ -81,10 +81,10 @@ At each step of the way, we will walk through implementation details and achieve
 @divend
 
 @div[right-50]
-1. **Business Understanding**
-2. Data Processing
-3. Modeling
-4. Deployment
+1. **Business Understanding**<br />
+2. Data Processing<br />
+3. Modeling<br />
+4. Deployment<br />
 5. What's Next?
 @divend
 
@@ -207,10 +207,10 @@ Our company wants to build a small website and allow people who have built profi
 @divend
 
 @div[right-50]
-1. Business Understanding
-2. **Data Processing**
-3. Modeling
-4. Deployment
+1. Business Understanding<br />
+2. **Data Processing**<br />
+3. Modeling<br />
+4. Deployment<br />
 5. What's Next?
 @divend
 
