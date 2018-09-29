@@ -74,12 +74,18 @@ At each step of the way, we will walk through implementation details and achieve
 
 @title[Business Understanding]
 
+@div[left-50]
+![Microsoft Team Data Science Process](presentation/assets/image/tdsp-lifecycle2_businessunderstanding.png)
+@divend
+
+@div[right-50]
 ## Agenda
 1. **Business Understanding**
 2. Data Processing
 3. Modeling
 4. Deployment
 5. What's Next?
+@divend
 
 ---
 
@@ -193,12 +199,18 @@ Our company wants to build a small website and allow people who have built profi
 
 @title[Data Processing]
 
+@div[left-50]
+![Microsoft Team Data Science Process](presentation/assets/image/tdsp-lifecycle2_data.png)
+@divend
+
+@div[right-50]
 ## Agenda
 1. Business Understanding
 2. **Data Processing**
 3. Modeling
 4. Deployment
 5. What's Next?
+@divend
 
 ---
 
@@ -416,12 +428,18 @@ Here we have two comparisons, depth vs table and x vs y. Depth and table are mil
 
 @title[Modeling]
 
+@div[left-50]
+![Microsoft Team Data Science Process](presentation/assets/image/tdsp-lifecycle2_modeling.png)
+@divend
+
+@div[right-50]
 ## Agenda
 1. Business Understanding
 2. Data Processing
 3. **Modeling**
 4. Deployment
 5. What's Next?
+@divend
 
 ---
 
@@ -594,12 +612,18 @@ You can also build a fitness function to evaluate certain types. Genetic algorit
 
 @title[Deployment]
 
+@div[left-50]
+![Microsoft Team Data Science Process](presentation/assets/image/tdsp-lifecycle2_deployment.png)
+@divend
+
+@div[right-50]
 ## Agenda
 1. Business Understanding
 2. Data Processing
 3. Modeling
 4. **Deployment**
 5. What's Next?
+@divend
 
 ---
 
