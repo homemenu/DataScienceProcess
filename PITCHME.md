@@ -36,7 +36,7 @@
 </div>
 @snapend
 
----?image=presentation/assets/background/2_1_philosophy.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/2_1_philosophy.jpg&size=cover&opacity=20
 
 ### Data Adages
 
@@ -62,7 +62,7 @@ To deal with these considerations, we build and implement processes.  These proc
 In today's talk, we will look at one particular process:  the Microsoft Team Data Science Process.
 @divend
 
----?image=presentation/assets/background/2_2_motivation.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/2_2_motivation.jpg&size=cover&opacity=20
 
 ### Motivation
 
@@ -88,7 +88,7 @@ At each step of the way, we will walk through implementation details and achieve
 ![Microsoft Team Data Science Process](presentation/assets/image/tdsp-lifecycle2_businessunderstanding.png)
 @divend
 
----?image=presentation/assets/background/business_understanding.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/business_understanding.jpg&size=cover&opacity=20
 
 ### Business Understanding
 
@@ -96,7 +96,7 @@ Somebody higher up (typically on the business side of the house) wants a data sc
 
 Your domain knowledge will be critical to success, but you should still find the champion(s) of your project and understand best their vision of success.
 
----?image=presentation/assets/background/questions.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/questions.jpg&size=cover&opacity=20
 
 ### Ask Questions
 
@@ -110,7 +110,7 @@ When interviewing your project champion or people on the business side, listen f
 
 These questions help you determine which algorithms to use.
 
----?image=presentation/assets/background/problem.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/problem.jpg&size=cover&opacity=20
 
 ### Get A Specific Problem
 
@@ -120,7 +120,7 @@ Your goal is to nail down a **specific** problem, narrowing the scope to somethi
 * Given a title and description for a product, tell me with at least 90% probability a listing category that Amazon will consider valid for this product.
 * Determine which factors most affect the number of years the first owner holds onto our mid-range sedan.
 
----?image=presentation/assets/background/looking_for_data.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/looking_for_data.jpg&size=cover&opacity=20
 
 ### Looking For Data
 
@@ -128,7 +128,7 @@ Once you have an interesting question, start looking for data. Some of this data
 
 Your champion will hopefully be able to point you in the right direction, but this part of the process requires legwork.
 
----?image=presentation/assets/background/dictionary.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/dictionary.jpg&size=cover&opacity=20
 
 ### Data Dictionary
 
@@ -140,7 +140,7 @@ Once you have a compendium of data sources, you will want to build a <strong>dat
 * Enumeration of valid values (if categorical)
 * Other domain rules (if known)
 
----?image=presentation/assets/background/warehouse.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/warehouse.jpg&size=cover&opacity=20
 
 ### End Result
 
@@ -160,7 +160,7 @@ We work for Data Platform Specialists, a company dedicated to providing DBAs and
 
 ![Sample survey data](presentation/assets/image/Survey.png)
 
----?image=presentation/assets/background/example_questions.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/example_questions.jpg&size=cover&opacity=20
 
 ### Example
 
@@ -180,7 +180,7 @@ Narrowing this down with our champion and other stakeholders, we can get to the 
 
 **How much money should we expect a data professional will make?**
 
----?image=presentation/assets/background/documents.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/documents.jpg&size=cover&opacity=20
 
 ### Example
 
@@ -190,7 +190,7 @@ For example, TelecommuteDaysPerWeek has six options:  less than 1, 1, 2, 3, 4, 5
 
 By contrast, number of hours worked per week is an integer ranging from 5 to 200 (?!).
 
----?image=presentation/assets/background/3_1_connection.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/3_1_connection.jpg&size=cover&opacity=20
 
 ### Example
 
@@ -224,7 +224,7 @@ Data processing is made up of a few different activities:
 * Data Cleansing
 * Data Analysis
 
----?image=presentation/assets/background/collection.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/collection.jpg&size=cover&opacity=20
 
 ### Data Gathering
 
@@ -235,7 +235,7 @@ Data gathering will likely be an iterative process; as you flesh out your models
 * Paid APIs or data sources from third parties
 * Survey data
 
----?image=presentation/assets/background/map.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/map.jpg&size=cover&opacity=20
 
 ### Data Gathering Example
 
@@ -275,7 +275,7 @@ Most of your time, you'll be a data plumber.
 
 ![Data Plumber](presentation/assets/image/SuperMario.jpg)
 
----?image=presentation/assets/background/2_0_cleaning.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/2_0_cleaning.jpg&size=cover&opacity=20
 
 ### Data Cleansing
 
@@ -283,7 +283,7 @@ General estimates that you will hear from data scientists is that they spend app
 
 Simply getting the data is a start, but there's a long journey ahead.
 
----?image=presentation/assets/background/4_3_datatypes.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/4_3_datatypes.jpg&size=cover&opacity=20
 
 ### Data Cleansing
 
@@ -293,7 +293,7 @@ After grabbing relevant-looking data sets, you will want to join them together t
 * Definining join criteria (because there is no obvious natural join key)
 * Reshaping data to fit join criteria
 
----?image=presentation/assets/background/4_1_dataquality.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/4_1_dataquality.jpg&size=cover&opacity=20
 
 ### Data Cleansing
 
@@ -305,7 +305,7 @@ You will quickly find problems with your data sets, including (but not limited t
 * Data inconsistencies:  records conflicting with other records
 * Misshapen flat files
 
----?image=presentation/assets/background/mismatch.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/mismatch.jpg&size=cover&opacity=20
 
 ### Data Cleansing - Mismatches
 
@@ -315,7 +315,7 @@ You will quickly find problems with your data sets, including (but not limited t
 							
 **Incorrect** data: when data other than the label is incorrect. Ex: a person works 200 hours per week?
 
----?image=presentation/assets/background/hole.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/hole.jpg&size=cover&opacity=20
 
 ### Data Cleansing - Missing Data
 
@@ -328,7 +328,7 @@ People don't always fill out the entirety of every form. When we're missing impo
 
 None of these options is perfect, but the last three can help salvage incomplete records.
 
----?image=presentation/assets/background/duplicates.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/duplicates.jpg&size=cover&opacity=20
 
 ### Data Cleansing - Duplicates
 
@@ -342,7 +342,7 @@ Independent systems may end up with inconsistent data due to reasons like typos,
 * Make one data set canonical
 * Institute rules (pick the lower number, pick the later date, etc.)
 
----?image=presentation/assets/background/misshapen.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/misshapen.jpg&size=cover&opacity=20
 
 ### Misshapen Data
 
@@ -350,7 +350,7 @@ Data stored in flat files or textual format can end up misshapen--some rows may 
 
 This is a problem with flat files and certain semi-structured data formats. It is not a problem with relational databases, where data shape is enforced.
 
----?image=presentation/assets/background/shapes.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/shapes.jpg&size=cover&opacity=20
 
 ### Data Shaping
 
@@ -361,11 +361,11 @@ There are several techniques we can use to reshape data to make it easier to ana
 * Normalize values (transform numeric data to have a mean of 0 and standard deviation of 1)
 * Bin data, converting continuous variables to discrete
 
----?image=presentation/assets/background/4_5_demo.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/4_5_demo.jpg&size=cover&opacity=20
 
 ### Demo Time
 
----?image=presentation/assets/background/exploration.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/exploration.jpg&size=cover&opacity=20
 
 ### Data Analysis
 
@@ -422,7 +422,7 @@ Here we have two comparisons, depth vs table and x vs y. Depth and table are mil
 ![Box Plot](presentation/assets/image/Correlation.png)
 
 
----?image=presentation/assets/background/4_5_demo.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/4_5_demo.jpg&size=cover&opacity=20
 
 ### Demo Time
 
@@ -444,7 +444,7 @@ Here we have two comparisons, depth vs table and x vs y. Depth and table are mil
 ![Microsoft Team Data Science Process](presentation/assets/image/tdsp-lifecycle2_modeling.png)
 @divend
 
----?image=presentation/assets/background/model.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/model.jpg&size=cover&opacity=20
 
 ### Modeling
 
@@ -456,7 +456,7 @@ Modeling has five major steps:
 * Model Evaluation
 * Model Tuning
 
----?image=presentation/assets/background/engineering.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/engineering.jpg&size=cover&opacity=20
 
 ### Feature Engineering
 
@@ -468,7 +468,7 @@ Feature engineering involves creating relevant features from raw data. Examples 
 * Aggregating data (by day, by hour, etc.)
 * Text processing -- turning words into arbitrary numbers for numeric analysis (TF-IDF, Word2Vec)
 
----?image=presentation/assets/background/selection.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/selection.jpg&size=cover&opacity=20
 
 ### Feature Selection
 
@@ -486,7 +486,7 @@ We use feature selection to winnow down the available set of features.  There ar
 ![My favorite example of spurious correlation](presentation/assets/image/SpuriousCorrelation.png)
 (<a href="http://www.tylervigen.com/spurious-correlations">Source</a>)
 
----?image=presentation/assets/background/train.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/train.jpg&size=cover&opacity=20
 
 ### Model Training
 
@@ -498,7 +498,7 @@ There are four major branches of algorithms:
 * Self-supervised learning
 * Reinforcement learning
 
----?image=presentation/assets/background/supervision.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/supervision.jpg&size=cover&opacity=20
 
 ### Supervised Learning
 
@@ -508,7 +508,7 @@ Supervised learning models require known answers (labels). We train a model to m
 * Classification -- Which?
 * Recommendation -- What next?
 
----?image=presentation/assets/background/cluster.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/cluster.jpg&size=cover&opacity=20
 
 ### Unsupervised Learning
 
@@ -517,7 +517,7 @@ With unsupervised learning, we do not know the answers beforehand and try to der
 * Clustering -- How can we segment?
 * Dimensionality reduction -- What of this data is useful?
 
----?image=presentation/assets/background/book.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/book.jpg&size=cover&opacity=20
 
 ### Self-Supervised Learning
 
@@ -537,7 +537,7 @@ Self-supervised learning typically happens with neural networks.
 Reinforcement learning is where we train an agent to observe its environment and use those environmental clues to make a decision.
 @divend
 
----?image=presentation/assets/background/greenscreen.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/greenscreen.jpg&size=cover&opacity=20
 
 ### Choose An Algorithm
 
@@ -565,7 +565,7 @@ Once you understand the nature of the problem, you can choose among viable algor
 Once you have an algorithm, features, and labels (if supervised), you can train the algorithm. Training a model is solving a system of equations, minimizing a loss function.
 @divend
 
----?image=presentation/assets/background/fitting.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/fitting.jpg&size=cover&opacity=20
 
 ### Validate The Model
 
@@ -573,13 +573,13 @@ Instead of using up all of our data for training, we typically want to perform s
 
 Overfitting happens when a model latches on to the particulars of a data set, leaving it unable to generalize to new data. To test for overfitting, test your model against unseen data. If there is a big dropoff in model accuracy between training and testing data, you are likely overfitting.
 
----?image=presentation/assets/background/suitmeasure.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/suitmeasure.jpg&size=cover&opacity=20
 
 ### Cross-Validation
 
 Cross-validation is a technique where we slice and dice the training data, training our model with different subsets of the total data. The purpose here is to find a model which is fairly robust to the particulars of a subset of training data, thereby reducing the risk of overfitting.
 
----?image=presentation/assets/background/tuning.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/tuning.jpg&size=cover&opacity=20
 
 ### Tune The Model
 
@@ -587,7 +587,7 @@ Most models have **hyperparameters**. For neural networks, the number of trainin
 
 We tune hyperparameters using our validation data set.
 
----?image=presentation/assets/background/evaluation.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/evaluation.jpg&size=cover&opacity=20
 
 ### Evaluate The Model
 
@@ -607,7 +607,7 @@ If we fail to safeguard this data, we can end up overfitting our model to the te
 You can also build a fitness function to evaluate certain types. Genetic algorithms are a common tool for this.
 @divend
 
----?image=presentation/assets/background/4_5_demo.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/4_5_demo.jpg&size=cover&opacity=20
 
 ### Demo Time
 
@@ -635,7 +635,7 @@ You can also build a fitness function to evaluate certain types. Genetic algorit
 
 Back in the day, one team would build a solution in an analytics language (e.g., R) but you would not go to production with that. Instead, an implementation team would rewrite your model in C++ or some other fast language. Those days of research versus implementation teams using completely different languages are now (mostly) gone.
 
----?image=presentation/assets/background/microscope.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/microscope.jpg&size=cover&opacity=20
 
 ### Deployment
 
@@ -649,7 +649,7 @@ Once you have a model ready to go, there are tools which make it relatively easy
 
 ![The DeployR process.](presentation/assets/image/deployrworkflow.png)
 
----?image=presentation/assets/background/stack.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/stack.jpg&size=cover&opacity=20
 
 ### Deployment
 
@@ -660,7 +660,7 @@ You can also build your own services.  Stacks that I've put into production incl
 
 With a microservices architecture, you're trying to plug in these new APIs while not forcing everybody else to change their skills.
 
----?image=presentation/assets/background/time.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/time.jpg&size=cover&opacity=20
 
 ### Deployment
 
@@ -701,7 +701,7 @@ Shiny is an interactive visualization product combining JavaScript and R. This i
 4. Deployment
 5. **What's Next?**
 
----?image=presentation/assets/background/sinkhole.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/sinkhole.jpg&size=cover&opacity=20
 
 ### What's Next?
 
@@ -711,7 +711,7 @@ It is important to keep checking the efficacy of models. Model shift happens, wh
 
 You may also find out that your training/testing data was not truly indicative of real-world data.
 
----?image=presentation/assets/background/flow.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/flow.jpg&size=cover&opacity=20
 
 ### What's Next?
 
@@ -721,7 +721,7 @@ Depending upon your choice of algorithm, you might be able to update the existin
 
 Some algorithms, however, require you to retrain from scratch.
 
----?image=presentation/assets/background/repetition.jpg&size=cover&opacity=15
+---?image=presentation/assets/background/repetition.jpg&size=cover&opacity=20
 
 ### What's Next?
 
