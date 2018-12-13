@@ -2,7 +2,8 @@
 .reveal section img { background:none; border:none; box-shadow:none; }
 </style>
 
-## Cleaning Is Half The Battle:  Launching A Data Science Project
+## Launching A Data Science Project
+### Cleaning Is Half The Battle
 
 <a href="https://www.catallaxyservices.com">Kevin Feasel</a> (<a href="https://twitter.com/feaselkl">@feaselkl</a>)
 <a href="https://csmore.info/on/datascience">https://CSmore.info/on/datascience</a>

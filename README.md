@@ -1,6 +1,6 @@
-# Cleaning Is Half The Battle:  Launching A Data Science Project
+# Launching A Data Science Project:  Cleaning Is Half The Battle
 
-This is demo code for my Cleaning Is Half The Battle:  Launching A Data Science Project presentation. You can see the presentation at https://www.catallaxyservices.com/presentations/datascience.
+This is demo code for my Launching A Data Science Project:  Cleaning Is Half The Battle presentation. You can see the presentation at https://www.catallaxyservices.com/presentations/datascience.
 
 All source code is licensed under the terms offered by the GPL (http://www.gnu.org/licenses/gpl.html) unless otherwise mentioned.
 
